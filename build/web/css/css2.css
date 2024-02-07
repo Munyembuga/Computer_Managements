@@ -1,0 +1,862 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+  display: flex;
+}
+
+.sliderbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 240px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #000000;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.logo {
+  height: 80px;
+  padding: relative;
+
+}
+
+.main {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+.main li {
+  padding: 1rem;
+  margin: 8px 0;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.main li:hover,
+.active {
+  background-color: #e0e0e058;
+}
+
+.main a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+}
+
+.main a span {
+  overflow: hidden;
+}
+
+.main a i {
+  font-size: 1.2rem;
+}
+
+.logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+}
+
+.maincontent {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.headerwrapper img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.headerwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 10px 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid grey;
+
+}
+
+.headertitle {
+  color: rgba(113, 99, 186, 255);
+
+}
+
+.userinformation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.searchbox {
+  border-radius: 15px;
+  color: rgba(113, 99, 186, 255);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.searchbox input {
+  background-color: transparent;
+  padding: 10px;
+
+}
+
+.searchbox i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+
+}
+
+.searchbox i:hover {
+  transform: scale(1, 2);
+}
+
+.cardcontainer {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cardwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.managepc {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.addpc {
+  border: 1px solid grey;
+  background-color: #000000;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.search-student {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-btn {
+  border: 1px solid grey;
+  padding: 8px 10px;
+  border-radius: 10px;
+  height: 20px;
+}
+
+.search-btn:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.school-container {
+  display: flex;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.school1 {
+  width: 10rem;
+  height: 5rem;
+  margin-top: 1rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.paymentcard {
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  width: 150px;
+  flex-direction: column;
+  border: 1px solid black;
+  transition: all 0.5s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+
+.paymentcard:hover {
+  transform: translateY(-5px);
+}
+
+.cardheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.search {
+  width: 42rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.addpc-container form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+}
+
+.regd {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 13px;
+}
+
+select {
+  margin-bottom: 20px;
+  width: 80%;
+  padding: 8px;
+  background: none;
+  color: #000000;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+input {
+  margin-bottom: 20px;
+  width: 75%;
+  padding: 8px;
+  background: none;
+  color: #000000;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.important {
+  color: red;
+}
+
+.cancel-add-btn {
+  margin-top: 8rem;
+  gap: 10px;
+  display: flex;
+  float: right;
+  flex-direction: flex-end;
+}
+
+
+.save-btn {
+  border: 1px solid grey;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+}
+
+.report-title {
+  text-align: center;
+  color: #111010;
+}
+
+.cancel-btn {
+  border: 1px solid grey;
+  padding: 5px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Style for the table */
+table {
+  width: 100%;
+}
+
+table tbody {
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid #ddd;
+}
+
+.view-more {
+  color: rgb(21, 0, 255);
+  text-align: center;
+  cursor: pointer;
+}
+
+table th {
+  background-color: #111010;
+  color: white;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+}
+
+table tr:nth-child(odd) {
+  background-color: #eae9e9;
+}
+
+.details-title {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(120, 141, 134);
+}
+
+
+/* staring of profile in css */
+
+.edit-profile {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.profile {
+  opacity: 40%;
+}
+
+.profile-preferences {
+  display: flex;
+  margin: 1.5rem 0rem;
+  gap: 20px;
+}
+
+.profile-title {
+  color: rgb(156, 159, 157);
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.profile-h {
+  color: rgb(93, 98, 95);
+  height: 30px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.ordered {
+  color: red;
+  align-items: center;
+}
+
+.names-ordered {
+  display: flex;
+  gap: 2px;
+}
+
+.form-profile-container label {
+  margin: 2px;
+  position: relative;
+}
+
+.form-profile-container input {
+  padding: 10px;
+  background: none;
+  color: #000000;
+  border: 1px solid lightgrey;
+  outline: none;
+  font-size: 12px;
+  border-radius: 8px;
+}
+.require{
+  color: red;
+}
+
+.form-profile-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#lab {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+}
+
+.delete-form-btn {
+  color: red;
+  width: fit-content;
+  border: 1px solid red;
+  padding: 7px 20px;
+  border-radius: 22px;
+  font-size: 14px;
+}
+
+.save-form-btn {
+  width: 15%;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  background-color: #000000;
+  border-radius: 22px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.all-form-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.change-pwd {
+  display: flex;
+  font-size: 13px;
+  gap: 30px;
+  margin-top: 20px;
+}
+.btn_chpass{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.change-pwd a {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.change-pwd-form {
+  border: 1px solid rgb(152, 151, 151);
+  width: 450px;
+  margin-top: 4%;
+  background-color: white;
+  border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 290px;
+}
+
+.change-pwd-form input {
+  padding: 10px;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(172, 171, 171);
+  color: rgb(0, 0, 0);
+}
+
+.change-pwd-form label {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+}
+.changepass{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left:  20rem;
+}
+
+.btn-pwd {
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  outline: 0;
+  border: 0;
+}
+
+.change-pwd-p {
+  text-align: center;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  margin: 5%;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+
+/* profile responsivensess */
+@media screen and (max-width: 900px) {
+  .edit-profile {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .profile {
+    opacity: 40%;
+  }
+
+  .profile-preferences {
+    display: flex;
+    margin: 2rem 0rem;
+    gap: 20px;
+  }
+
+  .profile-title {
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+  }
+
+  .profile-h {
+    color: rgb(0, 0, 0);
+    height: 30px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 13px;
+  }
+
+  .profile-pref {
+    font-size: 13px;
+  }
+
+  .ordered {
+    color: red;
+    align-items: center;
+  }
+
+  .names-ordered {
+    display: flex;
+    gap: 2px;
+  }
+
+  .form-profile-container label {
+    margin: 2px;
+    position: relative;
+  }
+
+  .form-profile-container input {
+    padding: 10px;
+    background: none;
+    color: #000000;
+    border: 1px solid lightgrey;
+    outline: none;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .form-profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  #cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #lab {
+    font-size: 12px;
+  }
+
+  .delete-form-btn {
+    color: red;
+    width: fit-content;
+    border: 1px solid red;
+    padding: 7px 20px;
+    border-radius: 22px;
+    font-size: 14px;
+  }
+
+  .save-form-btn {
+    width: 15%;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .all-form-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .changepass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:  10rem;
+  }
+
+  .change-pwd {
+    display: flex;
+    font-size: 13px;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .change-pwd a {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .change-pwd-form {
+    border: 1px solid rgb(149, 145, 145);
+    width: 400px;
+    margin-top: 4%;
+    margin-left: 10%;
+    background-color: white;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 260px;
+  }
+
+  .change-pwd-form input {
+    padding: 7px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(160, 160, 160);
+    color: rgb(0, 0, 0);
+  }
+
+  .change-pwd-form label {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+  }
+
+  .btn-pwd {
+    padding: 7px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    outline: 0;
+    border: 0;
+  }
+
+  .change-pwd-p {
+    text-align: center;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin: 5%;
+  }
+
+  .error {
+    color: red;
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .edit-profile {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+  }
+  
+
+  .profile {
+    opacity: 40%;
+  }
+
+  .profile-preferences {
+    display: flex;
+    margin: 2rem 0rem;
+    gap: 20px;
+  }
+
+  .profile-title {
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 50px;
+
+  }
+
+  .profile-h {
+    height: 30px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    font-size: 13px;
+  }
+
+  .profile-pref {
+    font-size: 13px;
+  }
+
+  .ordered {
+    color: red;
+    align-items: center;
+  }
+
+  .names-ordered {
+    display: flex;
+    gap: 2px;
+  }
+
+  .form-profile-container label {
+    margin: 2px;
+    position: relative;
+  }
+
+  .form-profile-container input {
+    padding: 10px;
+    background: none;
+    color: #000000;
+    border: 1px solid lightgrey;
+    outline: none;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .form-profile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #cont {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #lab {
+    font-size: 12px;
+  }
+
+  .delete-form-btn {
+    color: red;
+    width: fit-content;
+    border: 1px solid red;
+    padding: 7px 20px;
+    border-radius: 22px;
+    font-size: 14px;
+  }
+
+  .save-form-btn {
+    width: 15%;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .all-form-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .changepass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:  0rem;
+  }
+
+  .change-pwd {
+    display: flex;
+    font-size: 13px;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  .change-pwd a {
+    cursor: pointer;
+  }
+
+  .change-pwd-form {
+    border: 1px solid rgb(149, 148, 148);
+    width: 300px;
+    margin-top: 20%;
+    margin-left: 10%;
+    background-color: white;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 260px;
+  }
+
+  .change-pwd-form input {
+    padding: 7px;
+    border-radius: 4px;
+    border: 1px solid rgb(141, 140, 140);
+  }
+
+  .change-pwd-form label {
+    font-size: 13px;
+  }
+
+  .btn-pwd {
+    padding: 7px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    outline: 0;
+    border: 0;
+  }
+
+  .change-pwd-p {
+    text-align: center;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin: 5%;
+  }
+
+  .error {
+    color: red;
+    font-size: 13px;
+  }
+
+}
